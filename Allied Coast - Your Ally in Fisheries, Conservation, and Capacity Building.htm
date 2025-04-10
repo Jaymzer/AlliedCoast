@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allied Coast - Your Ally in Fisheries, Conservation, and Capacity Building</title>
+    <link href="Allied%20Coast%20-%20Your%20Ally%20in%20Fisheries,%20Conservation,%20and%20Capacity%20Building_files/tailwind.min.css" rel="stylesheet">
+    <link href="Allied%20Coast%20-%20Your%20Ally%20in%20Fisheries,%20Conservation,%20and%20Capacity%20Building_files/css2.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn1.genspark.ai/user-upload-image/imagen_generated/30de831c-40d1-40b7-9fcf-1f365fc2b7b8');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .about-section {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/imagen_generated/763cadf0-7d9a-4979-a705-c9fd0b6f9133');
+            background-size: cover;
+            background-position: center;
+        }
+        .services-section {
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/imagen_generated/aeda4808-4fa9-479e-a92a-65a3a48664cc');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-teal-dark {
+            color: #00514f;
+        }
+        .bg-teal-dark {
+            background-color: #00514f;
+        }
+        .border-teal-dark {
+            border-color: #00514f;
+        }
+        .hover\:bg-teal-dark:hover {
+            background-color: #00514f;
+        }
+        .text-sand {
+            color: #e8e0cf;
+        }
+        .bg-sand {
+            background-color: #e8e0cf;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 81, 79, 0.2);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #00514f;
+            left: 0;
+            bottom: -3px;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .contact-form input, .contact-form textarea, .contact-form select {
+            border: 1px solid #cccccc;
+            transition: all 0.3s ease;
+        }
+        .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+            border-color: #00514f;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 81, 79, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Allied%20Coast%20-%20Your%20Ally%20in%20Fisheries,%20Conservation,%20and%20Capacity%20Building_files/81e62b4bda40d96bb1eaec4783c46703.jpg" alt="Allied Coast Logo" class="h-16">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-800 hover:text-teal-dark font-medium">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-teal-dark font-medium">About</a>
+                <a href="#services" class="nav-link text-gray-800 hover:text-teal-dark font-medium">Services</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-teal-dark font-medium">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="text-gray-800 hover:text-teal-dark font-medium">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-teal-dark font-medium">About</a>
+                <a href="#services" class="text-gray-800 hover:text-teal-dark font-medium">Services</a>
+                <a href="#contact" class="text-gray-800 hover:text-teal-dark font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">Your Ally in Fisheries, Conservation, and Capacity Building</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">Allied
+ Coast partners with First Nations communities to build sustainable 
+programs and management capacity for long-term success.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#services" class="bg-teal-dark hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-lg shadow-lg transition duration-300 flex items-center">
+                    <span>Our Services</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-teal-dark font-medium py-3 px-8 rounded-lg shadow-lg transition duration-300 flex items-center">
+                    <span>Contact Us</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-dark mb-4">Welcome to Allied Coast</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We 
+are a 50% First Nations owned consulting firm dedicated to walking 
+alongside Indigenous communities on their path to sustainable resource 
+management and business success.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-teal-dark">
+                    <div class="text-teal-dark mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Business Development</h3>
+                    <p class="text-gray-600">Creating sustainable business opportunities and management structures for long-term growth.</p>
+                </div>
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-teal-dark">
+                    <div class="text-teal-dark mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Funding Assistance</h3>
+                    <p class="text-gray-600">Securing and effectively managing funding for community initiatives and projects.</p>
+                </div>
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-teal-dark">
+                    <div class="text-teal-dark mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Program Management</h3>
+                    <p class="text-gray-600">Developing and implementing effective programs that meet community needs and objectives.</p>
+                </div>
+                <div class="service-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-teal-dark">
+                    <div class="text-teal-dark mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Regulatory Compliance</h3>
+                    <p class="text-gray-600">Navigating complex regulatory environments while respecting Indigenous rights and traditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="bg-sand py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-dark mb-4">Why Choose Allied Coast</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">Our 
+unique approach combines business expertise with cultural understanding 
+to create sustainable programs that benefit generations to come.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="text-teal-dark mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">50% First Nations Owned</h3>
+                    <p class="text-gray-600">We understand Indigenous perspectives because they're integrated into our business at every level.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="text-teal-dark mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Territory-Based Service</h3>
+                    <p class="text-gray-600">We come to you, meeting in your territory and communities to build relationships where you feel at home.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="text-teal-dark mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">15+ Years Experience</h3>
+                    <p class="text-gray-600">Our team brings extensive experience in fisheries, conservation, and Indigenous business development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-dark mb-4">About Allied Coast</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We're a team of dedicated professionals committed to supporting First Nations communities in building sustainable futures.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-teal-dark mb-4">Our Story</h3>
+                    <p class="text-gray-700 mb-4">Founded by James 
+LaFlamme, Allied Coast emerged from over 15 years of experience working 
+closely with First Nations communities on Vancouver Island's west coast.</p>
+                    <p class="text-gray-700 mb-4">Having grown up in a 
+First Nations community with a stepfather who is Indigenous, James 
+developed a deep understanding of both traditional knowledge and modern 
+business practices.</p>
+                    <p class="text-gray-700 mb-4">Allied Coast was built
+ on the principle that business development and environmental 
+stewardship can work hand-in-hand when approached with respect for 
+Indigenous knowledge and values.</p>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold text-teal-dark mb-4">Our Values</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700"><strong class="text-teal-dark">Respect:</strong> Honoring traditional knowledge and community priorities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700"><strong class="text-teal-dark">Partnership:</strong> Working together as equals to achieve common goals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700"><strong class="text-teal-dark">Sustainability:</strong> Creating solutions that benefit generations to come</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700"><strong class="text-teal-dark">Innovation:</strong> Combining traditional wisdom with modern approaches</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <img src="Allied%20Coast%20-%20Your%20Ally%20in%20Fisheries,%20Conservation,%20and%20Capacity%20Building_files/75ff5c895641f4e4b309413428e57857.jpg" alt="James LaFlamme - Founder &amp; CEO" class="w-full h-auto rounded-lg mb-6">
+                        <h3 class="text-xl font-semibold text-teal-dark mb-2">James LaFlamme</h3>
+                        <p class="text-gray-600 font-medium mb-1">Founder &amp; CEO</p>
+                        <p class="text-gray-700 mb-4">With over 15 years
+ of experience in fisheries management and Indigenous collaboration, 
+James has dedicated his career to building bridges between traditional 
+ecological knowledge and modern business practices.</p>
+                        <div class="flex items-center text-teal-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:James@alliedcoast.com" class="hover:underline">James@alliedcoast.com</a>
+                        </div>
+                        <div class="flex items-center text-teal-dark mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <a href="tel:7805545252" class="hover:underline">780-554-5252</a>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-teal-dark mb-3">Our Approach</h3>
+                        <p class="text-gray-700 mb-4">At Allied Coast, 
+we meet you where you are—both literally and figuratively. We come to 
+your territory, listen to your needs, and work alongside your team to 
+build programs that reflect your community's values and goals.</p>
+                        <p class="text-gray-700">By integrating 
+Traditional Ecological Knowledge with scientific approaches, we create 
+management strategies that honor the past while building for the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-dark mb-4">Our Services</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We 
+offer a comprehensive suite of services designed to support First 
+Nations communities in building sustainable programs and businesses.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Capacity Building</h3>
+                        <p class="text-gray-600 mb-4">We develop 
+customized training programs that empower community members with the 
+skills needed to manage resources and businesses effectively.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Skills assessment and development plans</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Governance structure development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Leadership mentorship programs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Training Programs</h3>
+                        <p class="text-gray-600 mb-4">Our specialized 
+training programs provide essential skills for effective resource and 
+business management aligned with community values.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Fisheries management workshops</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Business administration training</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Project management certification</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Management Packages</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive 
+management solutions that bring together people, processes, and 
+technology to create efficient and sustainable operations.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Program design and implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Operational systems development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Performance monitoring frameworks</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Funding Assistance</h3>
+                        <p class="text-gray-600 mb-4">Strategic support for identifying, securing, and effectively managing funding for community initiatives and long-term programs.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Funding source identification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Grant application support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Financial management systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Proposal Writing</h3>
+                        <p class="text-gray-600 mb-4">Expert proposal 
+development that effectively communicates your community's vision, 
+needs, and plans to secure necessary resources.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Grant proposal development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Business plan creation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Project narrative development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-teal-dark p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Regulatory Compliance</h3>
+                        <p class="text-gray-600 mb-4">Navigate complex regulatory environments while respecting Indigenous rights and ensuring operations meet or exceed standards.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Regulatory assessment and planning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Compliance monitoring systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-dark mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Policy development and implementation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 7 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-teal-dark mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Fisheries Management</h3>
+                        <p class="text-gray-600">Sustainable approaches to fisheries that balance conservation with economic opportunity.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-teal-dark mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Quota Management</h3>
+                        <p class="text-gray-600">Strategic quota management systems that maximize benefits for the community.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-teal-dark mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Business Development</h3>
+                        <p class="text-gray-600">Creating sustainable business opportunities aligned with community values and goals.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 10 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <div class="text-teal-dark mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Technology Solutions</h3>
+                        <p class="text-gray-600">Implementing the right technology to enhance management effectiveness and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold text-teal-dark mb-4">Our Approach to Management</h3>
+                <p class="text-gray-700 mb-6">At Allied Coast, we 
+understand that successful program management requires a blend of 
+traditional wisdom and modern business practices. We work alongside your
+ team, in your territory, to build programs that reflect your 
+community's values while positioning you for long-term success.</p>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="bg-teal-dark h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-teal-dark mb-2">Listen</h4>
+                        <p class="text-gray-600">We begin by understanding your community's needs, goals, and vision for the future.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-dark h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-teal-dark mb-2">Design</h4>
+                        <p class="text-gray-600">Together, we create customized programs that integrate your knowledge with effective management practices.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-dark h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">3</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-teal-dark mb-2">Implement</h4>
+                        <p class="text-gray-600">We help you launch programs with the right structures, training, and support for success.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-teal-dark h-16 w-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl font-bold">4</span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-teal-dark mb-2">Sustain</h4>
+                        <p class="text-gray-600">Our focus is on building your capacity to independently manage and grow your programs over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="bg-teal-dark py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Build Programs That Last?</h2>
+            <p class="text-xl text-white mb-8 max-w-3xl mx-auto">Let's 
+work together to create sustainable management solutions that honor your
+ community's values and build capacity for the future.</p>
+            <a href="#contact" class="bg-white hover:bg-gray-100 text-teal-dark font-medium py-3 px-8 rounded-lg shadow-lg transition duration-300 inline-flex items-center">
+                <span>Start the Conversation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-teal-dark mb-4">Contact Us</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We're ready to meet you in your territory and discuss how we can support your community's goals.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form action="https://formspree.io/f/james@alliedcoast.com" method="POST" class="contact-form bg-white rounded-lg shadow-lg p-8">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg" required="">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg" required="">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg">
+                        </div>
+                        <div class="mb-6">
+                            <label for="organization" class="block text-gray-700 font-medium mb-2">Organization</label>
+                            <input type="text" id="organization" name="organization" class="w-full px-4 py-3 rounded-lg">
+                        </div>
+                        <div class="mb-6">
+                            <label for="services" class="block text-gray-700 font-medium mb-2">Services Needed</label>
+                            <select id="services" name="services" class="w-full px-4 py-3 rounded-lg">
+                                <option value="" selected="selected">Select a service</option>
+                                <option value="Capacity Building">Capacity Building</option>
+                                <option value="Training Programs">Training Programs</option>
+                                <option value="Management Packages">Management Packages</option>
+                                <option value="Funding Assistance">Funding Assistance</option>
+                                <option value="Proposal Writing">Proposal Writing</option>
+                                <option value="Regulatory Compliance">Regulatory Compliance</option>
+                                <option value="Fisheries Management">Fisheries Management</option>
+                                <option value="Quota Management">Quota Management</option>
+                                <option value="Business Development">Business Development</option>
+                                <option value="Technology Solutions">Technology Solutions</option>
+                                <option value="Other">Other (Please specify in message)</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg" required=""></textarea>
+                        </div>
+                        <button type="submit" class="bg-teal-dark hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-lg shadow-lg transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+                        <h3 class="text-2xl font-semibold text-teal-dark mb-4">Contact Information</h3>
+                        <div class="flex items-start mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-600 font-medium">Email</p>
+                                <a href="mailto:James@alliedcoast.com" class="text-teal-dark hover:underline">James@alliedcoast.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-600 font-medium">Phone</p>
+                                <a href="tel:7805545252" class="text-teal-dark hover:underline">780-554-5252</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-dark mt-0.5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <p class="text-gray-600 font-medium">Service Area</p>
+                                <p class="text-gray-800">Vancouver Island &amp; British Columbia West Coast</p>
+                                <p class="text-gray-600 mt-2">We meet clients in their communities and territories.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-teal-dark mb-4">Our Commitment</h3>
+                        <p class="text-gray-700 mb-4">At Allied Coast, 
+we believe in building lasting relationships based on trust, respect, 
+and mutual benefit. We're committed to walking alongside First Nations 
+communities on their journey toward sustainable management and economic 
+prosperity.</p>
+                        <p class="text-gray-700">Contact us today to begin a conversation about how we can support your community's goals and vision for the future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <img src="Allied%20Coast%20-%20Your%20Ally%20in%20Fisheries,%20Conservation,%20and%20Capacity%20Building_files/81e62b4bda40d96bb1eaec4783c46703.jpg" alt="Allied Coast Logo" class="h-24 bg-white p-2 rounded">
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-lg font-semibold mb-2">Allied Coast</p>
+                    <p class="mb-4">Your ally in fisheries, conservation, and capacity building.</p>
+                    <p>© 2023 Allied Coast. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body></html>
