@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allied Coast Consulting</title>
+    <meta name="description" content="Allied Coast Consulting - Your ally in fisheries management, conservation, and capacity building. 50% First Nations owned, based in Nanaimo, BC.">
+    <meta name="keywords" content="fisheries management, indigenous fisheries, conservation, Vancouver Island, capacity building, Nanaimo">
+    <link href="Allied%20Coast%20Consulting_files/tailwind.min.css" rel="stylesheet">
+    <link href="Allied%20Coast%20Consulting_files/css2.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003f5c;
+            --secondary-color: #2f5233;
+            --accent-color: #75b09c;
+            --light-color: #f4f1ed;
+            --dark-color: #2c3539;
+            --border-radius: 10px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            background-color: #fcfaf7;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .img-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .img-wrapper img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-wrapper:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Decorative border elements */
+        .border-wave {
+            position: relative;
+            padding-bottom: 4rem;
+        }
+
+        .border-wave::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z' opacity='.15' fill='%2375b09c'%3E%3C/path%3E%3Cpath d='M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z' opacity='.1' fill='%23003f5c'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .border-diagonal {
+            position: relative;
+            padding-bottom: 4rem;
+        }
+
+        .border-diagonal::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M1200 120L0 16.48 0 0 1200 0 1200 120z' fill='%23fcfaf7'%3E%3C/path%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .bg-teal {
+            background-color: #f5f9f8;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-link {
+            color: var(--dark-color);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background-color: var(--primary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background-color: var(--light-color);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(244,241,237,0.9) 40%, rgba(244,241,237,0) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            padding: 0 2rem;
+        }
+
+        /* Services */
+        .service-card {
+            padding: 2rem;
+            text-align: center;
+            border-radius: var(--border-radius);
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.5s ease;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: var(--primary-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 63, 92, 0.1);
+            border-radius: 50%;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            transition: all 0.5s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background-color: var(--primary-color);
+            transform: rotateY(180deg);
+        }
+
+        .service-card:hover .service-icon svg {
+            fill: white;
+        }
+
+        .service-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary-color);
+            transition: all 0.5s ease;
+        }
+
+        /* About */
+        .about-img {
+            border-radius: var(--border-radius);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            overflow: hidden;
+        }
+
+        .about-img::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            z-index: -1;
+            transition: all 0.5s ease;
+        }
+
+        .about-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .about-img:hover::before {
+            top: -15px;
+            left: -15px;
+        }
+
+        /* Experience */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .experience-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: all 0.5s ease;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .experience-img {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .experience-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .experience-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .experience-content {
+            padding: 1.5rem;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background-color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            padding: 1.2rem 1.5rem;
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '';
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .faq-item.active {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 1000px;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 63, 92, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info:hover .contact-icon {
+            background-color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        .contact-info:hover .contact-icon svg {
+            fill: white;
+        }
+
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0 2rem;
+            position: relative;
+        }
+
+        .footer-border {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z' fill='%23fcfaf7'%3E%3C/path%3E%3C/svg%3E");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
+
+        /* Decorative elements */
+        .decoration-dot {
+            position: absolute;
+            background-color: var(--primary-color);
+            opacity: 0.1;
+            border-radius: 50%;
+        }
+
+        .decoration-wave {
+            position: absolute;
+            opacity: 0.03;
+            z-index: -1;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .fade-in-delay-1 {
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: 0.2s;
+        }
+
+        .fade-in-delay-2 {
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .fade-in-delay-3 {
+            opacity: 0;
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: 0.6s;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-img {
+                width: 100%;
+                clip-path: none;
+                opacity: 0.2;
+            }
+            
+            .hero-overlay {
+                background: rgba(244,241,237,0.7);
+            }
+            
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            .experience-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .navbar {
+                padding: 0.5rem 0;
+            }
+            
+            .mobile-menu {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                padding: 1rem 0;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: all 0.3s ease;
+                z-index: 999;
+            }
+            
+            .mobile-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .nav-link {
+                display: block;
+                padding: 0.8rem 1.5rem;
+            }
+            
+            .nav-link::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center">
+                    <img src="Allied%20Coast%20Consulting_files/0f7e63c84aedeba23664a50ea141691f.jpg" alt="Allied Coast Logo" class="h-14 mr-3">
+                </a>
+                
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#expertise" class="nav-link">Expertise</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-2xl" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu md:hidden" id="mobile-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#expertise" class="nav-link">Expertise</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="Allied%20Coast%20Consulting_files/7546b1b4-180a-423c-8cac-5af98649f62e.jpg" alt="Vancouver Island Coastline" class="hero-img">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-primary-color fade-in">Your Ally in Fisheries &amp; Conservation</h1>
+                <p class="text-lg md:text-xl mb-8 fade-in-delay-1">50% First Nations owned consulting firm specializing in fisheries management, conservation, and capacity building.</p>
+                <div class="flex flex-col sm:flex-row gap-4 fade-in-delay-2">
+                    <a href="#services" class="btn">Explore Our Services</a>
+                    <a href="#contact" class="btn bg-transparent text-primary-color hover:text-white">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="decoration-dot w-20 h-20 top-20 left-[10%]" style="animation: float 6s ease-in-out infinite;"></div>
+        <div class="decoration-dot w-10 h-10 bottom-32 left-[30%]" style="animation: float 4s ease-in-out infinite;"></div>
+        <div class="decoration-dot w-16 h-16 top-32 right-[20%]" style="animation: float 5s ease-in-out infinite;"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section border-wave">
+        <div class="container">
+            <h2 class="section-title">About Allied Coast</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="about-img relative animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <img src="Allied%20Coast%20Consulting_files/75ff5c895641f4e4b309413428e57857.jpg" alt="James LaFlamme, Founder" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-color">James LaFlamme</h3>
+                    <h4 class="text-xl mb-4">Founder, Allied Coast Consulting</h4>
+                    <p class="mb-4">I bring over 15 years of experience 
+in fisheries management, conservation, and business development. My work
+ has always focused on supporting communities in building strong, 
+sustainable, and self-directed fisheries programs. I've led 
+multi-species harvest initiatives, designed and managed operational 
+systems, developed training programs, and helped secure funding to bring
+ local priorities to life.</p>
+                    <p class="mb-4">I've also worked closely with 
+communities, scientists, industry, and government to support 
+conservation efforts and develop practical solutions to complex 
+challenges. From restoring critical marine habitats to navigating 
+regulatory frameworks, I've built a career that balances long-term 
+sustainability with economic opportunity.</p>
+                    <p class="mb-4">In addition to my fisheries work, I 
+have started and operated several small businesses. This entrepreneurial
+ background gives me a practical perspective on what it takes to turn 
+vision into action, especially in remote or resource-based contexts.</p>
+                    <p>Through Allied Coast, I provide consulting and 
+training services that help build capacity, improve operations, and 
+unlock new opportunities in fisheries and wildlife management. My goal 
+is to help clients take control of their own path forward with 
+confidence, clarity, and the right support behind them.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative wave -->
+        <div class="decoration-wave w-full h-64 bottom-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-full">
+                <path fill="var(--primary-color)" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,133.3C960,160,1056,224,1152,234.7C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-teal border-diagonal">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Capacity Building -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M544 224c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM320 256c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm0-192c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80zm244.2 301.7C539.7 333.6 499.8 320 457.3 320H424c-14.7 0-28.9 1.9-42.5 5.3-9.8-12.9-20.9-24.6-33.9-34.5C380.4 274 419.8 256 464 256h48c53 0 96 43 96 96v136c0 13.3-10.7 24-24 24H568c-13.3 0-24-10.7-24-24V329.7zm-176-83.3c9.8 7.5 19.2 15.9 27.9 25.3-16.6 6.8-32 16.1-45.4 27.4-36.9-42.7-92-70.1-154.7-70.1H96c-53 0-96 43-96 96v136c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V329.7C96 294.4 126.4 266 165.7 256c-14.1 15.9-24.5 34.3-30.6 54.7-5.3-1.2-10.9-1.9-16.6-1.9-10.3 0-20.1 2.2-28.9 6.2-2.7-19-4.7-38.3-5.5-57.7 1.1 0 2.2-.1 3.3-.1h120c30.2 0 58.7 6.8 84.1 18.8 1.7 8.1 4.2 16 7.4 23.5-3.7-1.3-7.4-2.5-11.2-3.6-4.7-1.4-9.9.4-12.8 4.3l-42.9 59.4c-4.7 6.5-1.5 15.7 6.3 18 16.2 4.6 33.5 7.8 51.4 7.8 19 0 37.3-3.5 54.3-8.6 7.8-2.3 10.9-11.5 6.3-18l-42.9-59.4c-2.9-4-8.1-5.8-12.8-4.3-5 1.5-9.9 3.2-14.8 5.1zm-7.5 119.7c-21.5 6.1-44.6 10.1-68.7 10.1s-47.2-4-68.7-10.1c-9.9-2.8-10.1-17.2-.4-20.4 21.3-7 44.5-10.8 69.1-10.8s47.8 3.8 69.1 10.8c9.7 3.3 9.5 17.6-.4 20.4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Capacity Building</h3>
+                    <p>We develop customized programs to enhance your 
+team's skills and knowledge, creating sustainable capacity within your 
+organization.</p>
+                </div>
+                
+                <!-- Service 2: Training Programs -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Training Programs</h3>
+                    <p>Our specialized training programs are designed to
+ meet the specific needs of First Nations communities in fisheries and 
+resource management.</p>
+                </div>
+                
+                <!-- Service 3: Management Packages -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Management Packages</h3>
+                    <p>We create comprehensive management solutions that
+ integrate traditional knowledge with modern practices for effective 
+resource stewardship.</p>
+                </div>
+                
+                <!-- Service 4: Funding Assistance -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M608 64C565.33 64 497.67 64 455 64c-17.67 0-32 14.33-32 32v32c-32-18.67-67.67-32-106.67-32-32 0-80 24-80 24-32 0-96 13.33-96 64V352c0 50.67 48 64 80 64 0 0 32-16 80-16s80 16 80 16c30.67 0 80-12 80-64v-32c32 22.67 48 32 64 32 29.33 0 75.67-10.67 75.67-42.67V106.67C600 89 582.33 64 608 64zM128 276c0-22.67 25.33-36 64-36 17.33 0 28 2.67 44 8v32c-16-6.67-26.67-10.67-44-10.67-37.33 0-64 24-64 24s0-5.33 0-17.33zm256 72c-20 0-36-4-48-8v-80c12 4 28 8 48 8 42.67 0 96-24 96-24v72c0 10.67-16 32-96 32zm160-120c-16 8-25.33 10.67-32 10.67-17.33 0-29.33-4-48-16V162.67c18.67 12 34.67 17.33 48 17.33 5.33 0 14.67-2.67 32-16v64z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Funding Assistance</h3>
+                    <p>We help identify and secure funding opportunities to support your community's fisheries and conservation initiatives.</p>
+                </div>
+                
+                <!-- Service 5: Proposal Writing -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M368 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h352c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-78.86-347.26a31.97 31.97 0 0 0-9.21-19.44L203.31 4.69c-6.35-6.35-15.14-10.01-24.2-10.01s-17.84 3.66-24.2 10.01L79.3 81.3a31.97 31.97 0 0 0-9.21 19.44L57.58 399.3a16.06 16.06 0 0 0 3.78 12.08 16 16 0 0 0 11.04 5.96l55.92 7.05c7.59.96 14.45-4.26 15.4-11.8l.92-7.31L272.8 411.2c.08.61.16 1.23.26 1.83l.91 7.25a13.95 13.95 0 0 0 15.4 11.74l56.38-7.11c8.1-1.01 13.82-8.32 12.8-16.43l-69.51-316.74zM217.65 61.25l47.54 47.54-148.69 148.71-47.54-47.54 148.69-148.71zm-150.8 68.25l28.3 28.3-2.9 22.77-32.5-32.49 7.1-18.58zM279.51 384H102.57l-6.8-53.83 183.7-183.74 6.84 53.83-6.8 183.74z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proposal Writing</h3>
+                    <p>Our team develops compelling proposals that 
+effectively communicate your project's value and increase chances of 
+funding success.</p>
+                </div>
+                
+                <!-- Service 6: Regulatory Compliance -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M528 448H352V153.25c20.42-8.94 36.1-26.22 43.38-47.47 3.38-9.84 1.83-20.69-4.08-29.16l-25.03-35.75C360.5 30.67 351.4 25.14 341.5 22.7 323.19 18.3 303.85 32.28 303.06 32.86L80 160v160c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-96h32v288h-32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm16-96H176V48h368v304z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Regulatory Compliance</h3>
+                    <p>We navigate complex regulatory frameworks to ensure your operations meet all requirements while maximizing opportunities.</p>
+                </div>
+                
+                <!-- Service 7: Fisheries Management -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M327.1 96c-89.97 0-168.54 54.77-212.27 101.63L27.5 131.58c-12.13-9.18-30.24.6-27.14 14.66L24.54 256 .35 365.77c-3.1 14.06 15.01 23.83 27.14 14.66l87.33-66.05C158.55 361.23 237.13 416 327.1 416 464.56 416 576 288 576 256S464.56 96 327.1 96zm87.43 184c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24 13.26 0 24 10.74 24 24 0 13.25-10.75 24-24 24z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fisheries Management</h3>
+                    <p>Our expertise covers all aspects of sustainable fisheries management, from harvest planning to monitoring and assessment.</p>
+                </div>
+                
+                <!-- Service 8: Quota Management -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quota Management</h3>
+                    <p>We develop strategies to optimize the value and sustainability of your fishing quotas through effective management practices.</p>
+                </div>
+                
+                <!-- Service 9: Business Development -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Business Development</h3>
+                    <p>We help communities create and grow sustainable businesses based on their natural resources and traditional practices.</p>
+                </div>
+                
+                <!-- Service 10: Technology Solutions -->
+                <div class="service-card animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-5.66-5.66 45.26-45.25 5.66 5.66c6.25 6.25 16.39 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-5.66 5.66-45.25-45.26 5.66-5.66c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-5.66 5.66-45.25-45.26 5.66-5.66c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l5.66 5.66-45.25 45.26-5.66-5.66c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l5.66 5.66-45.25 45.26-5.66-5.66c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l5.66-5.66 45.26 45.26-5.66 5.66c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l5.66-5.66 45.26 45.26-5.66 5.66c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-5.66-5.66 45.26-45.25 5.66 5.66c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-5.66-5.66 45.25-45.26 5.66 5.66c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.39 0-22.63l-11.31-11.31zM255.03 199.03a16.005 16.005 0 0 0-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31zm0 45.26l-33.94 33.94-45.26-45.26-22.63 22.63-45.25-45.26 22.62-22.63 45.26 45.25 45.25-45.25 33.95 33.94 22.62-22.62 33.95 33.94-22.63 22.63-33.94-33.94v-.01zm90.51 90.51l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0zm-45.26-45.25l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0zm-90.51-90.51l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0zm-45.26-45.25l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0zm0 0"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Technology Solutions</h3>
+                    <p>We implement appropriate technologies to enhance your operational efficiency and data management capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section">
+        <div class="container">
+            <h2 class="section-title">Industry Leadership &amp; Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-12 items-center">
+                <div class="animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-color">Fisheries Management Excellence</h3>
+                    <p class="mb-4">Allied Coast brings together decades
+ of practical experience in fisheries management, conservation planning,
+ and sustainable resource development. Our team has worked extensively 
+throughout British Columbia's coastal communities, developing solutions 
+that balance ecological health with community prosperity.</p>
+                    <p>We combine scientific understanding with 
+traditional knowledge systems to create holistic approaches that respect
+ both the natural environment and the communities that depend on it. Our
+ work is grounded in the principle that true sustainability comes 
+through empowering communities to manage their own resources 
+effectively.</p>
+                </div>
+                <div class="img-wrapper h-full animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <img src="Allied%20Coast%20Consulting_files/5c08c004-7094-444e-b464-ad55e11f27b0.jpg" alt="Fisheries management" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="img-wrapper h-full order-2 md:order-1 animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <img src="Allied%20Coast%20Consulting_files/f7071efd-d809-4c1e-94d6-50b850e043b2.jpg" alt="First Nations partnerships" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="order-1 md:order-2 animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-color">First Nations Partnerships</h3>
+                    <p class="mb-4">Our approach is centered on true 
+partnership with First Nations communities. As a 50% First Nations-owned
+ consulting firm, we understand the importance of aligning economic 
+opportunities with cultural values and traditional practices.</p>
+                    <p>We work alongside communities to develop 
+capacity, secure funding, and implement programs that reflect local 
+priorities. Our goal is to support self-determination through practical,
+ sustainable solutions that build on existing strengths while addressing
+ current challenges.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="decoration-dot w-24 h-24 bottom-20 right-[5%]" style="animation: float 7s ease-in-out infinite;"></div>
+        <div class="decoration-dot w-16 h-16 top-40 left-[5%]" style="animation: float 5s ease-in-out infinite;"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-teal">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        What services does Allied Coast provide?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">Allied Coast provides a 
+comprehensive range of services focused on fisheries management, 
+conservation, and capacity building for First Nations communities. Our 
+core services include:</p>
+                        <ul class="list-disc pl-5 pb-4">
+                            <li>Capacity building and training programs</li>
+                            <li>Fisheries management and quota optimization</li>
+                            <li>Funding assistance and proposal writing</li>
+                            <li>Regulatory compliance support</li>
+                            <li>Business development for resource-based enterprises</li>
+                            <li>Technology implementation for operational efficiency</li>
+                        </ul>
+                        <p>Each service is customized to meet the specific needs and priorities of the communities we work with.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        How does Allied Coast work with First Nations communities?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">Our approach with First Nations 
+communities is centered on partnership and respect. We believe in 
+meeting communities in their own territories, understanding their unique
+ perspectives, and aligning our work with their priorities and values.</p>
+                        <p class="pb-4">As a 50% First Nations-owned 
+consulting firm, we bring both cultural understanding and technical 
+expertise to every project. We focus on building long-term relationships
+ based on trust and mutual respect, working alongside communities rather
+ than simply providing services to them.</p>
+                        <p>Our goal is to support self-determination by 
+helping communities develop the capacity, resources, and tools they need
+ to manage their own fisheries and natural resources effectively and 
+sustainably.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        What experience does James LaFlamme have?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">James LaFlamme brings over 15 
+years of diverse experience in fisheries management, conservation, and 
+business development. His background includes:</p>
+                        <ul class="list-disc pl-5 pb-4">
+                            <li>Leading multi-species harvest initiatives</li>
+                            <li>Designing and managing operational systems for fisheries</li>
+                            <li>Developing specialized training programs</li>
+                            <li>Securing funding for community priorities</li>
+                            <li>Collaborating with communities, scientists, industry, and government</li>
+                            <li>Restoring critical marine habitats</li>
+                            <li>Navigating complex regulatory frameworks</li>
+                            <li>Starting and operating several small businesses</li>
+                        </ul>
+                        <p>This combination of technical expertise, 
+practical experience, and entrepreneurial background allows James to 
+address both the ecological and economic aspects of sustainable resource
+ management.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        What areas does Allied Coast serve?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">Allied Coast primarily serves 
+communities along British Columbia's West Coast, with a focus on 
+Vancouver Island and surrounding regions. Our familiarity with the 
+unique ecological, cultural, and economic characteristics of this region
+ allows us to provide highly relevant and effective services.</p>
+                        <p>However, many of our approaches and 
+methodologies can be adapted to other coastal and resource-based 
+communities throughout British Columbia and beyond. We consider each 
+potential project based on our ability to provide excellent service and 
+meaningful results.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        How long does a typical consulting project take?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">The timeline for our consulting 
+projects varies greatly depending on the nature and scope of the work. 
+Some focused initiatives may be completed in a matter of weeks, while 
+more comprehensive capacity building programs might unfold over several 
+years.</p>
+                        <p class="pb-4">We believe in taking the time 
+needed to do things right, especially when working with communities to 
+build lasting capacity and sustainable systems. Our approach emphasizes 
+quality and durability over quick fixes.</p>
+                        <p>During our initial consultation, we'll 
+discuss your timeline needs and develop a realistic schedule that 
+balances efficiency with thoroughness.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item animate-on-scroll" onclick="toggleFaq(this)" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="faq-question">
+                        How does the process work when engaging Allied Coast?
+                    </div>
+                    <div class="faq-answer">
+                        <p class="pb-4">Our engagement process typically follows these steps:</p>
+                        <ol class="list-decimal pl-5 pb-4">
+                            <li><strong>Initial Consultation:</strong> We meet with you, preferably in your community, to understand your needs, priorities, and vision.</li>
+                            <li><strong>Assessment:</strong> We evaluate current situations, opportunities, and challenges related to your fisheries or resource management goals.</li>
+                            <li><strong>Proposal Development:</strong> We create a customized proposal outlining recommended approaches, timelines, and investment required.</li>
+                            <li><strong>Collaborative Planning:</strong> We work with you to refine the plan and ensure it aligns with your community's values and objectives.</li>
+                            <li><strong>Implementation:</strong> We put the plan into action, working alongside your team to build capacity and transfer knowledge throughout the process.</li>
+                            <li><strong>Evaluation and Adjustment:</strong> We regularly assess progress and make adjustments as needed to ensure optimal results.</li>
+                            <li><strong>Ongoing Support:</strong> We remain available for follow-up support and additional services as your needs evolve.</li>
+                        </ol>
+                        <p>Throughout this process, we maintain open 
+communication and emphasize partnership rather than a traditional 
+client-consultant relationship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative border -->
+        <div class="decoration-wave w-full h-96 bottom-0 left-0 opacity-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-full">
+                <path fill="var(--primary-color)" d="M0,128L48,144C96,160,192,192,288,208C384,224,480,224,576,197.3C672,171,768,117,864,117.3C960,117,1056,171,1152,181.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section border-wave">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Email</h4>
+                            <p><a href="mailto:James@AlliedCoast.com" class="text-primary-color hover:text-accent-color transition">James@AlliedCoast.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Phone</h4>
+                            <p><a href="tel:7805545252" class="text-primary-color hover:text-accent-color transition">780-554-5252</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-lg">Location</h4>
+                            <p>Nanaimo, British Columbia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="mailto:James@AlliedCoast.com" class="btn inline-flex items-center">
+                            <span>Schedule a Consultation</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" viewBox="0 0 448 512">
+                                <path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="img-wrapper h-full animate-on-scroll" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <img src="Allied%20Coast%20Consulting_files/7546b1b4-180a-423c-8cac-5af98649f62e.jpg" alt="Vancouver Island Coastline" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="decoration-dot w-20 h-20 top-32 right-[10%]" style="animation: float 6s ease-in-out infinite;"></div>
+        <div class="decoration-dot w-12 h-12 bottom-20 left-[15%]" style="animation: float 4s ease-in-out infinite;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-border"></div>
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <img src="Allied%20Coast%20Consulting_files/0f7e63c84aedeba23664a50ea141691f.jpg" alt="Allied Coast Logo" class="h-16 mb-4">
+                    <p class="mb-4 text-gray-300">Your ally in fisheries, conservation, and capacity building. 50% First Nations owned, based in Nanaimo, BC.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:ml-16">
+                    <h3 class="text-xl font-bold mb-4 text-white relative pb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition">About</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li>
+                        <li><a href="#expertise" class="text-gray-300 hover:text-white transition">Expertise</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white relative pb-2">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-color mt-1 mr-3" viewBox="0 0 512 512" fill="var(--accent-color)">
+                                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                            </svg>
+                            <a href="mailto:James@AlliedCoast.com" class="text-gray-300 hover:text-white transition">James@AlliedCoast.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-color mt-1 mr-3" viewBox="0 0 512 512" fill="var(--accent-color)">
+                                <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                            </svg>
+                            <a href="tel:7805545252" class="text-gray-300 hover:text-white transition">780-554-5252</a>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent-color mt-1 mr-3" viewBox="0 0 384 512" fill="var(--accent-color)">
+                                <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                            </svg>
+                            <span class="text-gray-300">Nanaimo, British Columbia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>© 2023 Allied Coast Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu .nav-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.remove('active');
+            });
+        });
+        
+        // FAQ toggle
+        function toggleFaq(element) {
+            const wasActive = element.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // If the clicked item wasn't active before, open it
+            if (!wasActive) {
+                element.classList.add('active');
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const navbarHeight = document.getElementById('navbar').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Element animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight * 0.85) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Initialize animation properties
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            // Run initial animation check
+            setTimeout(() => {
+                animateOnScroll();
+            }, 100);
+        });
+        
+        // Run animation on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+
+</body></html>
